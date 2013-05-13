@@ -1,7 +1,7 @@
 module CoinJar
   class Client
  
-    attr_accessor *Configuration::VALID_CONFIG_KEYS, root_resource
+    attr_accessor *Configuration::VALID_CONFIG_KEYS, :root_resource
  
     def initialize(options={})
       merged_options = CoinJar.options.merge(options)
@@ -15,8 +15,8 @@ module CoinJar
       parse url(path).post(payload)
     end
   
-    def get(path, params)
-      parse url(path)[path].get(:params => params)
+    def get(path, params = nil)
+      parse url(path).get(:params => params)
     end
   
     def put(path, payload)
