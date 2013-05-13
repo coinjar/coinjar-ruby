@@ -1,9 +1,9 @@
 require 'coinjar/version'
+require 'coinjar/configuration'
 
 module CoinJar
   
   extend Configuration
-  extend Client
   
   def post_request(path, data)
     root_resource[path].post(data)
@@ -26,11 +26,11 @@ module CoinJar
   end
   
   def root_url
-    CoinJar::Configuration.options.endpoint
+    options.endpoint
   end
   
   def root_resource
-    RestClient::Resource.new(root_url, :user => CoinJar::Configuration.options.api_key)
+    RestClient::Resource.new(root_url, :user => options.api_key)
   end
   
   
