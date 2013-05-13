@@ -5,3 +5,4 @@ gemspec
 
 gem "rest-client"
 gem "multi_json"
+gem "activesupport"

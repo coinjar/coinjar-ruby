@@ -1,9 +1,10 @@
 module CoinJar
   module Configuration
-    VALID_CONFIG_KEYS     = [:api_key, :endpoint]
+    VALID_CONFIG_KEYS     = [:api_key, :endpoint, :format]
  
-    DEFAULT_ENDPOINT    = 'https://api.coinjar.io/v1'
-    DEFAULT_API_KEY      = nil
+    DEFAULT_ENDPOINT = 'https://api.coinjar.io/v1'
+    DEFAULT_API_KEY = nil
+    DEFAULT_FORMAT = :json
  
     attr_accessor *VALID_CONFIG_KEYS
  
@@ -13,8 +14,9 @@ module CoinJar
     end
  
     def reset
-      self.endpoint   = DEFAULT_ENDPOINT
-      self.api_key    = DEFAULT_API_KEY
+      self.endpoint = DEFAULT_ENDPOINT
+      self.api_key = DEFAULT_API_KEY
+      self.format = DEFAULT_FORMAT
     end
     
     def options
