@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["CoinJar Pty Ltd", "Ryan Zhou", "Jerrold Poh"]
   spec.email         = ["info@coinjar.io"]
   spec.description   = ["Official Ruby gem for CoinJar."]
-  spec.summary       = ["Official Ruby gem for CoinJar."]
+  spec.summary       = ["CoinJar is an easy-to-use Bitcoin payment platform."]
   spec.homepage      = "https://coinjar.io"
   spec.license       = "MIT"
 

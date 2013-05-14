@@ -4,7 +4,7 @@ module CoinJar
     attr_accessor *Configuration::VALID_CONFIG_KEYS, :root_resource
  
     def initialize(options={})
-      merged_options = CoinJar.options.merge(options)
+      merged_options = CoinJar.config_options.merge(options)
       Configuration::VALID_CONFIG_KEYS.each do |key|
         send("#{key}=", merged_options[key])
       end
@@ -20,15 +20,15 @@ module CoinJar
     end
   
     def put(path, payload)
-      parse url(path)[path].put(payload)
+      parse url(path).put(payload)
     end
   
     def delete(path)
-      parse url(path)[path].delete
+      parse url(path).delete
     end
   
     def patch(path, payload)
-      parse url(path)[path].patch(payload)
+      parse url(path).patch(payload)
     end
     
     def parse(response)

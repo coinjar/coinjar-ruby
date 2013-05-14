@@ -1,7 +1,7 @@
 module CoinJar
   class Payment
     
-    attr_accessor :uuid, :payee, :payee_name, :amount, :status, :created_at, :updated_at
+    attr_accessor :uuid, :payee, :payee_name, :amount, :status, :related_transaction_uuid, :created_at, :updated_at
     
     def initialize(args)
       reset(args)

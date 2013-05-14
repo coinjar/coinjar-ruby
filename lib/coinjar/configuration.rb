@@ -19,7 +19,7 @@ module CoinJar
       self.format = DEFAULT_FORMAT
     end
     
-    def options
+    def config_options
       Hash[ * VALID_CONFIG_KEYS.map { |key| [key, send(key)] }.flatten ]
     end
  
