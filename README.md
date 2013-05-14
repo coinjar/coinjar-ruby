@@ -1,12 +1,12 @@
-# Coinjar::Ruby
+# CoinJar
 
-TODO: Write a gem description
+The official CoinJar Ruby gem is the easiest way to interact with CoinJar API in your Ruby applications.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'coinjar-ruby'
+    gem 'coinjar'
 
 And then execute:
 
@@ -14,11 +14,11 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install coinjar-ruby
+    $ gem install coinjar
 
 ## Usage
 
-TODO: Write usage instructions here
+TODO
 
 ## Contributing
 
