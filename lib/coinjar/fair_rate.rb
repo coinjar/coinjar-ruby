@@ -4,16 +4,11 @@ module CoinJar
     attr_accessor :currency, :bid, :ask, :spot
     
     def initialize(currency = "USD")
-      self.currency = currency
+      @currency = currency
       response = CoinJar.client.get("fair_rate/" + currency)
-      self.reset(response)
-      self
-    end
-    
-    def reset(args)
-      args.each do |k,v|
-        instance_variable_set("@#{k}", v) unless v.nil?
-      end
+      @bid = BigDecimal.new response[:bid]
+      @ask = BigDecimal.new response[:ask]
+      @spot = BigDecimal.new response[:spot]
     end
     
   end
