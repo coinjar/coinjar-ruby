@@ -8,6 +8,7 @@ require 'coinjar/client'
 require 'coinjar/address'
 require 'coinjar/payment'
 require 'coinjar/transaction'
+require 'coinjar/fair_rate'
 
 module CoinJar
   extend Configuration
