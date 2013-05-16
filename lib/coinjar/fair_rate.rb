@@ -4,6 +4,7 @@ module CoinJar
     attr_accessor :currency, :bid, :ask, :spot
     
     def initialize(currency = "USD")
+      self.currency = currency
       response = CoinJar.client.get("fair_rate/" + currency)
       self.reset(response)
       self
