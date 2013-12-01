@@ -12,12 +12,12 @@ require 'coinjar/fair_rate'
 
 module CoinJar
   extend Configuration
-  
+
   class << self
     def client
       @client = CoinJar::Client.new unless defined?(@client) && @client.hash == config_options.hash
       @client
     end
   end
-  
+
 end
