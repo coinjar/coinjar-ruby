@@ -1,0 +1,68 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://pJ451Sk8tXz9LdUbGg1sobLUZuVzuJwdyr4sD3owFW4WYHxo:@secure.sandbox.coinjar.io/api/v1/transactions/a350ff8e-725d-4000-a45e-8ca4c1ff329a.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Params:
+      - ''
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 05 Apr 2014 06:00:57 GMT
+      Server:
+      - nginx/1.4.6
+      Set-Cookie:
+      - request_method=GET; path=/; secure
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - 77303427-c076-4141-a025-2927b22ded9a
+      X-Runtime:
+      - '0.221943'
+      X-Ua-Compatible:
+      - chrome=1
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '320'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA32QP0/DMBDFvwrKCq78N46zdUAsqEI0A1t0sc9SoHGC40iN
+        qn53nMKAGJBuufP7ne+9S5EihBls6sdQ1JdiWXpX1AUIRb2vkGiuHJGUUgJS
+        IaksSMu8F9xA8VDYcQkJ4wQxrW2AATMa2IuVx9e9PA9P7EMc8T0Ozf5NHNaw
+        f7ZNOX/+BdM6beARQ7pLY36FYdubR4TtVO7nBGmZN8njocl9RI8Rg81UWE6n
+        7Y7g+zjA5iLrvoddn+zYhzadb5YqJQxjFiwYX1a6dABANXSiBNASsaqcNUa6
+        DsCjUE7KDrU1lHvssHL+9u8JErp2gnXIx7Y/YZWoOAoqiLZO5LA8ks6XllAQ
+        mmlvvOc00zbijYbNGadMEppLNaysGa8V2+WU7xmr6SZeJvefmP8SX69fnYG3
+        MsYBAAA=
+    http_version: 
+  recorded_at: Sat, 05 Apr 2014 06:00:57 GMT
+recorded_with: VCR 2.9.0
