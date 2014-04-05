@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ### Configuration
 
-First you need to configure the __api_key__, which is the CoinJar authentication token. You can obtain it from [CoinJar Account Settings](https://secure.coinjar.io/user/edit) > API Access.
+First you need to configure the __api_key__, which is the CoinJar authentication token. You can obtain it from [CoinJar Account Settings](https://secure.coinjar.io/users/sign_in) > API Access.
 
     require 'coinjar'
     CoinJar.api_key = "pJ451Sk8tXz9LdUbGg1sobLUZuVzuJwdyr4sD3owFW4WYHxo"
