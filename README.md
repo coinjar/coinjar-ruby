@@ -83,6 +83,9 @@ Fund a transaction by uuid
 
   transaction = CoinJar::Transaction.find('a350ff8e-725d-4000-a45e-8ca4c1ff329a')
 
+## To do
+
+ * Document and test pagination
 
 ## Contributing
 
