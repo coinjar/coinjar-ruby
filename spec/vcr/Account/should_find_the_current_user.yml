@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://pJ451Sk8tXz9LdUbGg1sobLUZuVzuJwdyr4sD3owFW4WYHxo:@secure.sandbox.coinjar.io/api/v1/account.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Params:
+      - ''
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 05 Apr 2014 06:00:52 GMT
+      Server:
+      - nginx/1.4.6
+      Set-Cookie:
+      - request_method=GET; path=/; secure
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - 5e9a1a1a-5217-46c6-8336-f15bdcb0cb10
+      X-Runtime:
+      - '0.053274'
+      X-Ua-Compatible:
+      - chrome=1
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '154'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA03LTQ7CIBBA4auYWUuDFCp0ZaIrL9EMMCQYfhIMbpreXdy5
+        ft/bob+pwbpD79HDCpaEkJIs0+gCk9YIppWcmQ2cc6+MEeTgDJQxpsE95Xpz
+        NZYXtinWUUJPaSuYadT7CE9sp8dQI+FnTGgTbRYTFvcjVzNdtNJiWdQQvbha
+        QmyZ/J+Z+cThOL6tEnPBrAAAAA==
+    http_version: 
+  recorded_at: Sat, 05 Apr 2014 06:00:52 GMT
+recorded_with: VCR 2.9.0
