@@ -8,7 +8,7 @@ module CoinJar
     end
     
     def fetch
-      CoinJar.client.get("transactions/" + uuid)[:transaction]
+      response = CoinJar.client.get("transactions/" + uuid)
       self.reset(response[:transaction])
       self
     end
