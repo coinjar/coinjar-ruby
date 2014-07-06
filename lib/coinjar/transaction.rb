@@ -49,11 +49,11 @@ module CoinJar
     end
 
     def self.bitcoin_deposits
-      bitcoin_transactions.select{|t| t.deposit?}
+      all.select{|t| t.bitcoin_deposit?}
     end
 
     def self.bitcoin_withdrawals
-      bitcoin_transactions.select{|t| t.withdrawal?}
+      all.select{|t| t.bitcoin_withdrawal?}
     end
 
     def self.purchases
@@ -64,13 +64,13 @@ module CoinJar
       all.select{|t| t.sale?}
     end
 
-    def self.find_by_txid(txid)
-      bitcoin_transactions.detect{|t| txid == t.bitcoin_txid}
+    def self.find_by_bitcoin_txid(txid)
+      all.detect{|t| txid == t.bitcoin_txid}
     end
 
-    def self.find_all_by_txid(*txids)
+    def self.find_all_by_bitcoin_txid(*txids)
       txids = txids.flatten
-      bitcoin_transactions.select{|t| txids.include?(t.bitcoin_txid)}
+      all.select{|t| txids.include?(t.bitcoin_txid)}
     end
 
     # boolean methods
