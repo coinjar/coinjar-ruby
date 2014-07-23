@@ -2,6 +2,12 @@
 
 The official CoinJar Ruby gem is the easiest way to interact with CoinJar API in your Ruby applications.
 
+## Status
+
+This gem is not currently released on [RubyGems](http://rubygems.org/gems/coinjar).
+
+For information on using the CoinJar API directly, see [the documentation](https://developer.coinjar.io/display/CD/CoinJar+API).
+
 ## Installation
 
 Add this line to your application's Gemfile:
