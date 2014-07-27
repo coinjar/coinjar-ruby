@@ -14,7 +14,7 @@ module CoinJar
     end
     
     def self.list(offset = 0, limit = 100)
-      CoinJar.client.get("bitcoin_addresses", { offset: offset, limit: limit }).map { |p| self.new p[:bitcoin_address] }
+      CoinJar.client.get("bitcoin_addresses", { offset: offset, limit: limit })[:bitcoin_addresses].map { |p| self.new p }
     end
     
   end
