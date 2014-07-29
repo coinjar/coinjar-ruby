@@ -51,18 +51,22 @@ module CoinJar
     def self.bitcoin_deposits
       all.select{|t| t.bitcoin_deposit?}
     end
+    class << self; alias_method :btc_received, :bitcoin_deposits; end
 
     def self.bitcoin_withdrawals
       all.select{|t| t.bitcoin_withdrawal?}
     end
+    class << self; alias_method :btc_sent, :bitcoin_withdrawals; end
 
     def self.purchases
       all.select{|t| t.purchase?}
     end
+    class << self; alias_method :btc_bought, :purchases; end
 
     def self.sales
       all.select{|t| t.sale?}
     end
+    class << self; alias_method :btc_sold, :sales; end
 
     def self.find_by_bitcoin_txid(txid)
       all.detect{|t| txid == t.bitcoin_txid}
