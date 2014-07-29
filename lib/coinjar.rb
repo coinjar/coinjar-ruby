@@ -35,18 +35,22 @@ module CoinJar
     def bitcoin_deposits
       Transaction.bitcoin_deposits
     end
+    alias_method :btc_received, :bitcoin_deposits
 
     def bitcoin_withdrawals
       Transaction.bitcoin_withdrawals
     end
+    alias_method :btc_sent, :bitcoin_withdrawals
 
     def purchases
       Transaction.purchases
     end
+    alias_method :btc_bought, :purchases
 
     def sales
       Transaction.sales
     end
+    alias_method :btc_sold, :sales
 
   end # class << self
 
