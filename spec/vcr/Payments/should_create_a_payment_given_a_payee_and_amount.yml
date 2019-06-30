@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://pJ451Sk8tXz9LdUbGg1sobLUZuVzuJwdyr4sD3owFW4WYHxo:@secure.sandbox.coinjar.io/api/v1/payments.json
+    body:
+      encoding: US-ASCII
+      string: payment[amount]=1.25&payment[payee]=n1Pc4SRA4xmG1k3SejrmTAX3NynALcT6sq
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Length:
+      - '70'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 05 Apr 2014 06:00:54 GMT
+      Etag:
+      - "\"3cbf5cad6bd643a97423f8530ab697f7\""
+      Location:
+      - https://secure.sandbox.coinjar.io/payments/78ba697c-3260-4f05-a7d7-4125a983b5e1
+      Server:
+      - nginx/1.4.6
+      Set-Cookie:
+      - request_method=POST; path=/; secure
+      Status:
+      - 201 Created
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - 4552582e-e9ed-4933-acfe-eabee6792115
+      X-Runtime:
+      - '0.090305'
+      X-Ua-Compatible:
+      - chrome=1
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '301'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"payment\":{\"uuid\":\"78ba697c-3260-4f05-a7d7-4125a983b5e1\",\"payee_name\":\"n1Pc4SRA4xmG1k3SejrmTAX3NynALcT6sq\",\"payee_type\":\"ADDRESS\",\"amount\":\"1.25\",\"status\":\"PENDING\",\"reference\":null,\"created_at\":\"2014-04-05T17:00:54.680+11:00\",\"updated_at\":\"2014-04-05T17:00:54.680+11:00\",\"related_transaction\":null}}"
+    http_version: 
+  recorded_at: Sat, 05 Apr 2014 06:00:54 GMT
+recorded_with: VCR 2.9.0
