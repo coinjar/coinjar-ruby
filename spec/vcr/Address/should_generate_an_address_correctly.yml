@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://pJ451Sk8tXz9LdUbGg1sobLUZuVzuJwdyr4sD3owFW4WYHxo:@secure.sandbox.coinjar.io/api/v1/bitcoin_addresses.json
+    body:
+      encoding: UTF-8
+      string: label=Test label
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Length:
+      - '16'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 05 Apr 2014 06:00:52 GMT
+      Etag:
+      - "\"6d33912bd4ddca788be3fed2a1e8ae84\""
+      Location:
+      - https://secure.sandbox.coinjar.io/bitcoin_addresses/mzPoXY5MDCCXtWP33iia8T3Rgb8bRGC3m3
+      Server:
+      - nginx/1.4.6
+      Set-Cookie:
+      - request_method=POST; path=/; secure
+      Status:
+      - 201 Created
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - 43d2049f-8d29-4e5e-b95f-49bcc6a7c52f
+      X-Runtime:
+      - '0.076071'
+      X-Ua-Compatible:
+      - chrome=1
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '136'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"bitcoin_address\":{\"address\":\"mzPoXY5MDCCXtWP33iia8T3Rgb8bRGC3m3\",\"label\":\"Test
+        label\",\"total_received\":\"0.0\",\"total_confirmed\":\"0.0\"}}"
+    http_version: 
+  recorded_at: Sat, 05 Apr 2014 06:00:52 GMT
+recorded_with: VCR 2.9.0
