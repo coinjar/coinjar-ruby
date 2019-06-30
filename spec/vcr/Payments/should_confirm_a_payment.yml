@@ -1,0 +1,121 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://pJ451Sk8tXz9LdUbGg1sobLUZuVzuJwdyr4sD3owFW4WYHxo:@secure.sandbox.coinjar.io/api/v1/payments.json
+    body:
+      encoding: US-ASCII
+      string: payment[amount]=1.5&payment[payee]=n1Pc4SRA4xmG1k3SejrmTAX3NynALcT6sq
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Length:
+      - '69'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 05 Apr 2014 06:00:55 GMT
+      Etag:
+      - "\"4e18035fe1dae895ef3e5d23f4a4ff02\""
+      Location:
+      - https://secure.sandbox.coinjar.io/payments/03a14b58-ab0a-4c3f-9987-46d009cfaa8a
+      Server:
+      - nginx/1.4.6
+      Set-Cookie:
+      - request_method=POST; path=/; secure
+      Status:
+      - 201 Created
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - 83b546bb-1d76-420a-9cd0-6c8c7e42435f
+      X-Runtime:
+      - '0.086194'
+      X-Ua-Compatible:
+      - chrome=1
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '300'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"payment\":{\"uuid\":\"03a14b58-ab0a-4c3f-9987-46d009cfaa8a\",\"payee_name\":\"n1Pc4SRA4xmG1k3SejrmTAX3NynALcT6sq\",\"payee_type\":\"ADDRESS\",\"amount\":\"1.5\",\"status\":\"PENDING\",\"reference\":null,\"created_at\":\"2014-04-05T17:00:55.577+11:00\",\"updated_at\":\"2014-04-05T17:00:55.577+11:00\",\"related_transaction\":null}}"
+    http_version: 
+  recorded_at: Sat, 05 Apr 2014 06:00:55 GMT
+- request:
+    method: post
+    uri: https://pJ451Sk8tXz9LdUbGg1sobLUZuVzuJwdyr4sD3owFW4WYHxo:@secure.sandbox.coinjar.io/api/v1/payments/03a14b58-ab0a-4c3f-9987-46d009cfaa8a/confirm.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 05 Apr 2014 06:00:56 GMT
+      Etag:
+      - "\"68e69e3850ed5a52f4b2fdf5df648f37\""
+      Location:
+      - https://secure.sandbox.coinjar.io/payments/03a14b58-ab0a-4c3f-9987-46d009cfaa8a
+      Server:
+      - nginx/1.4.6
+      Set-Cookie:
+      - request_method=POST; path=/; secure
+      Status:
+      - 201 Created
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - 15bf73a9-9deb-47fd-8342-1a49227815d8
+      X-Runtime:
+      - '0.157000'
+      X-Ua-Compatible:
+      - chrome=1
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '672'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"payment\":{\"uuid\":\"03a14b58-ab0a-4c3f-9987-46d009cfaa8a\",\"payee_name\":\"n1Pc4SRA4xmG1k3SejrmTAX3NynALcT6sq\",\"payee_type\":\"ADDRESS\",\"amount\":\"1.5\",\"status\":\"COMPLETED\",\"reference\":null,\"created_at\":\"2014-04-05T17:00:55.000+11:00\",\"updated_at\":\"2014-04-05T17:00:55.973+11:00\",\"related_transaction\":{\"id\":11166,\"user_id\":1,\"counterparty_user_id\":null,\"counterparty_address\":\"n1Pc4SRA4xmG1k3SejrmTAX3NynALcT6sq\",\"amount\":\"-1.5\",\"status\":\"SENT\",\"confirmations\":null,\"bitcoin_txid\":null,\"uuid\":\"414cea18-8380-409a-bcbb-ae158a29ffa4\",\"created_at\":\"2014-04-05T17:00:55.000+11:00\",\"updated_at\":\"2014-04-05T17:00:55.000+11:00\",\"payment_id\":10049,\"reference\":null,\"charge_id\":null}}}"
+    http_version: 
+  recorded_at: Sat, 05 Apr 2014 06:00:55 GMT
+recorded_with: VCR 2.9.0
