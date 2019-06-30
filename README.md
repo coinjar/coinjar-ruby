@@ -1,6 +1,6 @@
 # CoinJar
 
-The official CoinJar Ruby gem is the easiest way to interact with CoinJar API in your Ruby applications.
+This is the unofficial CoinJar Ruby gem which combines all of the outstanding PRs and then some, and is now the best way to interact with the CoinJar API in your Ruby applications.
 
 ## Status
 
